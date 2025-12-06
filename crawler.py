@@ -55,5 +55,5 @@ def crawl_website(start_url, max_pages=20):
             # Bỏ qua nếu có lỗi kết nối, timeout, hoặc lỗi khác
             pass
 
-    # CHỈ TRẢ VỀ DANH SÁCH URL để khớp với yêu cầu của api.py
-    return found_urls
+ # CHỈ TRẢ VỀ DANH SÁCH URL để khớp với yêu cầu của api.py
+    return list(visited)

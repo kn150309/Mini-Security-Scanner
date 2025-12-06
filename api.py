@@ -44,3 +44,7 @@ def crawl(request: ScanRequest):
 @app.get("/health")
 def health():
     return {"status": "ok"}
+
+@app.get("/")
+def read_root():
+    return {"message": "Welcome to the Scanner/Crawler API. Check /health, or use POST /api/scan and /api/crawl."}

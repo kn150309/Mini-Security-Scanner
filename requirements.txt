@@ -1,6 +1,6 @@
+# requirements.txt
 fastapi
-uvicorn[standard]
-requests
-beautifulsoup4
+uvicorn
 pydantic
-python-multipart   # nếu cần upload
+requests       # Thêm vào
+beautifulsoup4 # Thêm vào
