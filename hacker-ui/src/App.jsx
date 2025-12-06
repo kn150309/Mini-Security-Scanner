@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import "./App.css";
 
 // Endpoint API
-const API_BASE_URL = "https://mini-security-scanner-olcj.vercel.app";
+const API_BASE_URL = "https://mini-security-scanner.vercel.app/";
 const SCAN_API_URL = `${API_BASE_URL}/scan`;
 const CRAWL_API_URL = `${API_BASE_URL}/crawl`; // <--- Đã thêm
 
