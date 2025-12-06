@@ -1,0 +1,137 @@
+/* FULL SCREEN */
+.full-screen {
+    width: 100vw;
+    /* height: 100vh; <--- XÓA hoặc thay bằng min-height: 100vh; */
+    min-height: 100vh; /* Đảm bảo chiều cao tối thiểu là 100% màn hình */
+    overflow: auto; /* <-- Thay đổi thành auto hoặc scroll */
+    background: black;
+    position: relative;
+    font-family: Consolas, monospace;
+    color: #16ffb2;
+}
+
+/* MATRIX CANVAS */
+#matrix {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* UI LAYER */
+.ui-layer {
+  position: relative;
+  z-index: 10;
+  padding: 40px;
+}
+
+/* TITLE GLITCH */
+.title-glitch {
+  font-size: 40px;
+  color: #16ffb2;
+  text-align: center;
+  margin-bottom: 10px;
+  text-shadow: 0 0 5px #16ffb2, 0 0 10px #00ffaa;
+  animation: glitch 1.5s infinite;
+}
+
+@keyframes glitch {
+  0% { text-shadow: 2px 0 red, -2px 0 cyan; }
+  20% { text-shadow: -2px 0 red, 2px 0 cyan; }
+  40% { text-shadow: 2px 0 red, -2px 0 cyan; }
+  60% { text-shadow: -2px 0 red, 2px 0 cyan; }
+  100% { text-shadow: 2px 0 red, -2px 0 cyan; }
+}
+
+/* SUBTITLE */
+.subtitle {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #ccc;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* INPUT AREA */
+.input-area {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.url-input {
+  width: 50%;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid #16ffb2;
+  color: #16ffb2;
+  font-size: 18px;
+  outline: none;
+  box-shadow: 0 0 10px #16ffb2;
+}
+
+.scan-btn {
+  padding: 12px 25px;
+  font-size: 18px;
+  border: none;
+  background: #16ffb2;
+  color: black;
+  cursor: pointer;
+  transition: 0.2s;
+  font-weight: bold;
+  box-shadow: 0 0 15px #16ffb2;
+}
+
+.scan-btn:hover {
+  background: #1affd9;
+  box-shadow: 0 0 25px #1affd9;
+}
+
+/* TERMINAL */
+.terminal-window {
+  width: 60%;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #16ffb2;
+  background: rgba(0, 0, 0, 0.5);
+  color: #16ffb2;
+  font-size: 16px;
+  white-space: pre-line;
+  box-shadow: 0 0 20px #16ffb2;
+}
+
+/* RESULT BOX CYBERPUNK */
+.neon-border {
+  border: 2px solid #16ffb2;
+  box-shadow: 0 0 20px #16ffb2, 0 0 40px #16ffb2;
+  padding: 20px;
+}
+
+.result-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  color: #16ffb2;
+}
+
+.result-table th,
+.result-table td {
+  border: 1px solid #16ffb2;
+  padding: 10px;
+  text-align: left;
+}
+
+.yes {
+  color: red;
+  font-weight: bold;
+}
+
+.no {
+  color: #1affd9;
+}
+
+.small-url {
+  font-size: 12px;
+  color: #55ffca;
+}
